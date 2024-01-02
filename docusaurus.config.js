@@ -34,6 +34,16 @@ const config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'Content-Security-Policy',
+      content: `'self' 'unsafe-inline' https://*.googletagmanager.com;`,
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
